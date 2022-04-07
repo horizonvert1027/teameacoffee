@@ -62,7 +62,7 @@ app.use('/uploads', express.static(__dirname + 'public/uploads'))
 app.use('/ads.txt', express.static(__dirname + 'public/ads.txt'))
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended : true }))
+app.use(bodyParser.urlencoded({ extended : false }))
 app.use(fileUpload());
 
 app.set('views', './src/views')
